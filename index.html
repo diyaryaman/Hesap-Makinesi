@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--Cihazın ekran genişliğine bağlı olarak büyüklüğü ayarlama-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hesap Makinesi</title>
+        <!--CSS koduna bağlıyoruz-->
+        <link rel="stylesheet" href="stil.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="screen" id="screen"></div>
+            <div class="buttons">
+                <button id="btnsil" class="button">C</button>
+                <button id="btnesit" class="button">=</button>
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>               
+                <button id="bolme" class="button">/</button>            
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button id="carpi" class="button">*</button>         
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button id="eksi" class="button">-</button>           
+                <button class="button">0</button>
+                <button onclick="addToExpression('(')" class="button">(</button>
+                <button onclick="addToExpression(')')" class="button">)</button>
+                <button id="arti" class="button">+</button>
+            </div>
+        </div>
+    <!-- JavaScript koduna bağlıyoruz-->
+        <script src="script.js"></script>
+    </body>
+</html>
